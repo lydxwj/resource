@@ -1,10 +1,17 @@
 {
-  "name": "lydxwj-resource",
+  "name": "@lydxwj/resource",
   "version": "0.1.0",
-  "private": true,
+  "description": "加载资源",
+  "main": "lib/index.umd.min.js",
+  "author": "lyd",
+  "license": "MIT",
+  "keyword": "resource load-resource",
   "scripts": {
+    "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "publish": "vue-cli-service build --target lib --name index --dest lib src/plugin/index.js",
+    "prepare": "npm run publish"
   },
   "dependencies": {
     "core-js": "^2.6.5",
